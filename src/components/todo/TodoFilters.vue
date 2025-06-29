@@ -77,7 +77,7 @@
         </label>
         <select
           :value="sort"
-          @change="$emit('update:sort', ($event.target as HTMLSelectElement).value)"
+          @change="$emit('update:sort', ($event.target as HTMLSelectElement).value as TodoSort)"
           class="select select-bordered select-sm bg-white/80 dark:bg-gray-700/80 backdrop-blur-sm"
         >
           <option value="createdAt">📅 Date Created</option>
